@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LoveTab</title>
+    <link rel="stylesheet" href="newtab.css">
+    
+</head>
+<body>
+    <div id = "display-choice"></div>
+    <div id="google-logo">
+        <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" alt="Google" style="filter: brightness(0) invert(1); width: 272px;">
+    </div>
+    <div class="search-container">
+        <input id="search" type="text" placeholder="Search Google...">
+    </div>
+    <div id="container"> 
+        <div class="tile" draggable="true" id="love-tile" data-index="0">
+            <div class="tile-icon">
+                <img draggable="false" src="/icons/heart.png">
+            </div>
+            <div class="tile-title">
+                <span>Love Note</span>
+            </div>
+        </div>
+        <div class="tile" draggable="true" id="frog-tile" data-index="1">
+            <div class="tile-icon">
+                <img draggable="false" src="/icons/frog.png">
+            </div>
+            <div class="tile-title">
+                <span>Frog of the Day</span>
+            </div>
+        </div>
+        <a class="tile"  id="message-link" draggable="true" id="message-tile" data-index="2">
+            <div class="tile-icon">
+                <img draggable="false" src="/icons/chat.png">
+            </div>
+            <div class="tile-title">
+                <span>Message Me</span>
+            </div>
+        </a>
+        <div class="tile" draggable="true" id="fortune-tile" data-index="3">
+            <div class="tile-icon">
+                <img draggable="false" src="/icons/magic-ball.png">
+            </div>
+            <div class="tile-title">
+                <span>Daily Fortune</span>
+            </div>
+        </div>
+        <div class="tile" draggable="true" id="photo-tile" data-index="4">
+            <div class="tile-icon">
+                <img draggable="false" src="/icons/camera.png">
+            </div>
+            <div class="tile-title">
+                <span>Memory</span>
+            </div>
+        </div>
+    </div>
+    <div id="place-name"></div>
+    <!---
+    <div class="love-note" id="loveNote"></div>
+    <div class="container">
+        <div  class="container-items" id="fortune">
+            <h id="fortune-title">Today's Fortune</h>
+            <p id="fortune-text"></p>
+        </div>
+        <div  class="container-items" id="frog">
+            <h id="frog-name">Frog of the Day</h>
+            <img id="frog-image" src="" alt="Frog Image" width="300">
+            <p id="frog-description"></p>
+        </div>
+        <div  class="container-items" id="affirmation">
+            <h id="affirmation-title">Daily Affirmation</h>
+            <p id="affirmation-text"></p>
+        </div>
+    </div>
+-->
+    <script  src="./firebase/firebase-initializer.js" type="module"></script>
+    <script src="newtab.js" type="module"></script>
+</body>
+</html>

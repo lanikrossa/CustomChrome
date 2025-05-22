@@ -1,0 +1,7 @@
+{
+  "type": "module",
+  "dependencies": {
+    "firebase": "^11.4.0",
+    "openai": "^4.85.4"
+  }
+}

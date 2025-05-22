@@ -1,0 +1,11 @@
+{
+  "manifest_version": 3,
+  "version": "1.0",
+  "name": "LoveTab",
+  "description": "A Valentine's Day Reminder that I love you!",
+  "chrome_url_overrides": {
+    "newtab": "newtab.html"
+  },
+  "permissions": ["storage"]
+}
+  

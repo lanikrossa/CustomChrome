@@ -1,0 +1,143 @@
+:root {
+    --tile-size: 112px;
+    --column-count: 5;
+    --row-count: 1;
+    --content-width: calc(var(--column-count)*var(--tile-size) + 1px);
+    --tile-background-color: rgba(225, 227, 225, 1.00);
+  }
+
+body {
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+.search-container {
+    background: white;
+    padding: 10px;
+    border-radius: 50px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    width: 50%;
+    max-width: var(--content-width);
+}
+input {
+    border: none;
+    outline: none;
+    font-size: 18px;
+    flex: 1;
+    padding: 10px;
+}
+#google-logo{
+    padding-top: 150px;
+}
+
+#container{
+    display: flex;
+    flex-wrap: wrap;
+    height: calc(var(--tile-size)*2);
+    width: var(--content-width);
+    justify-content: center;
+    margin-bottom: 8px;
+    padding: 2px;
+    overflow: hidden;
+}
+
+.tile-icon{
+    align-items: center;
+    background-color: rgba(225, 227, 225, 1.00);
+    border-radius: 50%;
+    display: flex;
+    flex-shrink: 0;
+    margin-top: 16px;
+    margin-bottom: 6px;
+    justify-content: center;
+    height: 48px;
+    width: 48px;
+}
+.tile-icon img{
+    height: 24px;
+    width: 24px; 
+}
+
+.tile-title{
+    color: white;
+    text-shadow: 1px 1px 2px black; 
+}
+
+.tile{
+    align-items: center;
+    border-radius: 4px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    width: var(--tile-size);
+    height: var(--tile-size);
+    transition: transform 0.3s ease;
+}
+
+#lani_ryan{
+    width: 100%; /* Makes the image take up the full width of its container */
+    max-width: 300px; /* Limits the width to a maximum of 500px */
+    height: auto; /* Keeps the image's aspect ratio */
+    border-radius: 15px; /* Rounded corners */
+    border: 5px solid white; /* Adds a border around the image */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+    transition: transform 0.3s ease; /* Smooth transition for scaling effect */
+    margin: 20px 0px 20px 0px;
+}
+#place-name {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-family: sans-serif;
+    font-size: 14px;
+  }
+/*
+.love-note {
+    margin-top: 20px 0px 20px 0px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 10px;
+}
+.love-note, .container-items {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+
+.container{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+}
+
+.container-items {
+    flex: 1;
+}
+
+#fortune{
+    margin-right: 20px;
+}
+#frog{
+    margin-right: 20px;
+}*/
