@@ -26,7 +26,6 @@ export async function displayFrog() {
         console.log(frogData.img);
         document.getElementById('frog-image').src = frogData.img;
         document.getElementById('frog-description').innerText = frogData.description;
-        document.getElementById("google-logo").style.display = "none";
 
     } else {
         console.log("No data available");
