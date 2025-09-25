@@ -24,8 +24,11 @@ async function getRandomAffirmation() {
    }
 
    export async function displayAffirmation() {
-    document.getElementById("google-logo").style.display = "none";
     const affirmation = await getRandomAffirmation();
     const el = document.getElementById("display-choice");
-    el.innerText = affirmation || "No affirmation found.";
+        el.innerHTML = `
+        <div class="bubble">
+            ${affirmation || "No affirmation found."}
+        </div>
+    `;
 }

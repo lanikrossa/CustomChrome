@@ -7,7 +7,7 @@ document.getElementById("search").addEventListener("keydown", function (event) {
     if (event.key === "Enter") {
         window.location.href = "https://www.google.com/search?q=" + encodeURIComponent(this.value);
     }
-});
+}); 
 
 const keys = Object.keys(CONFIG.FAVORITE_PLACES);
 const randomIndex = Math.floor(Math.random() * keys.length);
