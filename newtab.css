@@ -33,8 +33,13 @@ input {
     flex: 1;
     padding: 10px;
 }
-#google-logo{
-    padding-top: 150px;
+#display-choice{
+    padding-top: 145px;
+    /* We use min-height to ensure this container always reserves the vertical space */
+    height: 110px; /* (approx. 150px padding + 92px logo height) */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #container{
@@ -101,43 +106,30 @@ input {
     font-family: sans-serif;
     font-size: 14px;
   }
-/*
-.love-note {
-    margin-top: 20px 0px 20px 0px;
-    font-size: 20px;
-    font-weight: bold;
-    color: white;
+
+.bubble {
+    max-width: 60%;
+    padding: 20px 25px;
+    background: rgba(255, 255, 255, 0.9);
+    color: #333;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    border-radius: 20px;
+    position: relative;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    font-family: "Segoe UI", sans-serif;
+    margin-bottom: 30px; 
     text-align: center;
-    background: rgba(0, 0, 0, 0.5);
-    padding: 10px;
-    border-radius: 10px;
-}
-.love-note, .container-items {
-    margin-top: 20px;
-    font-size: 20px;
-    font-weight: bold;
-    color: white;
-    text-align: center;
-    background: rgba(0, 0, 0, 0.5);
-    padding: 10px;
-    border-radius: 10px;
 }
 
-
-.container{
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 20px;
+/* Add the little speech bubble tail */
+.bubble::after {
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    margin-left: -10px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: rgba(255, 255, 255, 0.9) transparent transparent transparent;
 }
-
-.container-items {
-    flex: 1;
-}
-
-#fortune{
-    margin-right: 20px;
-}
-#frog{
-    margin-right: 20px;
-}*/
