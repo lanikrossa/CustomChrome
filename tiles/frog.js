@@ -16,14 +16,15 @@ export async function displayFrog() {
 
         // Update HTML content
         const display = document.getElementById('display-choice');
-        display.innerHTML = `<div class="container-items" id="frog">
-                                <h2 id="frog-name">Frog of the Day</h2>
-                                <img id="frog-image" src="" alt="Frog Image" width="300">
-                                <p id="frog-description"></p>
-                            </div>`;
+        display.innerHTML = `<div id="frog">
+        <div class="frog-text-content">
+            <h2 id="frog-name"></h2>
+            <p id="frog-description"></p>
+        </div>
+        <img id="frog-image" src="" alt="Frog Image">
+    </div>`;
 
         document.getElementById('frog-name').innerText = randomFrog;
-        console.log(frogData.img);
         document.getElementById('frog-image').src = frogData.img;
         document.getElementById('frog-description').innerText = frogData.description;
 
