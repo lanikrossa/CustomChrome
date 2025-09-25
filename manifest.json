@@ -4,7 +4,7 @@
   "name": "LoveTab",
   "description": "A Valentine's Day Reminder that I love you!",
   "chrome_url_overrides": {
-    "newtab": "newtab.html"
+    "newtab": "index.html"
   },
   "permissions": ["storage"]
 }
