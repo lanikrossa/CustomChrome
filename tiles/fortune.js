@@ -5,8 +5,12 @@ export async function displayFortune() {
     const today = new Date().toISOString().split('T')[0];
     const cachedFortune = localStorage.getItem("fortune_" + today);
     if (cachedFortune) {
-        document.getElementById("google-logo").style.display = "none";
-        document.getElementById("display-choice").innerText = cachedFortune;
+        const el = document.getElementById("display-choice");
+        el.innerHTML = `
+        <div class="bubble">
+            ${cachedFortune}
+        </div>
+    `;
         return;
     }
 
@@ -30,8 +34,12 @@ export async function displayFortune() {
     const data = await response.json();
     const fortune = data.choices[0].message.content; 
     console.log("Daily fortune:", fortune);
-    document.getElementById("google-logo").style.display = "none";
-    document.getElementById("display-choice").innerText = fortune;
+    const el = document.getElementById("display-choice");
+    el.innerHTML = `
+    <div class="bubble">
+        ${fortune}
+    </div>
+`;
     // Cache the fortune for today
     localStorage.setItem("fortune_" + today, fortune);
 }

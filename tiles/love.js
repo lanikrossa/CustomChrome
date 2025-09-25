@@ -25,9 +25,7 @@ async function getRandomAffirmation() {
 
    export async function displayAffirmation() {
     const affirmation = await getRandomAffirmation();
-    // Get the google-logo container itself
     const el = document.getElementById("display-choice");
-    // Replace its content with the bubble
         el.innerHTML = `
         <div class="bubble">
             ${affirmation || "No affirmation found."}
